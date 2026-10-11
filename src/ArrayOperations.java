@@ -1,6 +1,3 @@
-
-import java.util.Arrays;
-
 public class ArrayOperations {
 
     private int[] array;
@@ -11,34 +8,24 @@ public class ArrayOperations {
         size = 0;
     }
 
-    // Add a value to the end of the array
-    public boolean insert(int value) {
-        if (size >= array.length) {
+    // Insert an element
+    public void insert(int value) {
+        if (size == array.length) {
             System.out.println("Array is full!");
-            return false;
+            return;
         }
 
         array[size] = value;
         size++;
-        return true;
+
+        System.out.println("Element inserted successfully.");
     }
 
-    // Display all array values
-    public void display() {
-        if (size == 0) {
-            System.out.println("Array is empty.");
-            return;
-        }
-
-        System.out.println("Array: " +
-                Arrays.toString(Arrays.copyOf(array, size)));
-    }
-
-    // Delete a value at a given index
-    public boolean delete(int index) {
+    // Delete an element by index
+    public void delete(int index) {
         if (index < 0 || index >= size) {
             System.out.println("Invalid index!");
-            return false;
+            return;
         }
 
         for (int i = index; i < size - 1; i++) {
@@ -46,10 +33,24 @@ public class ArrayOperations {
         }
 
         size--;
-        return true;
+        System.out.println("Element deleted successfully.");
     }
 
-    // Search for a value using linear search
+    // Display array elements
+    public void display() {
+        if (size == 0) {
+            System.out.println("Array is empty.");
+            return;
+        }
+
+        System.out.println("Array elements:");
+
+        for (int i = 0; i < size; i++) {
+            System.out.println("Index " + i + ": " + array[i]);
+        }
+    }
+
+    // Linear search
     public int linearSearch(int target) {
         for (int i = 0; i < size; i++) {
             if (array[i] == target) {
@@ -60,35 +61,18 @@ public class ArrayOperations {
         return -1;
     }
 
-    // Sort the array and search using binary search
-    public int binarySearch(int target) {
-        Arrays.sort(array, 0, size);
+    // Get array elements for performance comparison
+    public int[] getValues() {
+        int[] values = new int[size];
 
-        int left = 0;
-        int right = size - 1;
-
-        while (left <= right) {
-            int middle = left + (right - left) / 2;
-
-            if (array[middle] == target) {
-                return middle;
-            } else if (array[middle] < target) {
-                left = middle + 1;
-            } else {
-                right = middle - 1;
-            }
+        for (int i = 0; i < size; i++) {
+            values[i] = array[i];
         }
 
-        return -1;
+        return values;
     }
 
-    // Return the current number of values
     public int getSize() {
         return size;
-    }
-
-    // Return the array values
-    public int[] getValues() {
-        return Arrays.copyOf(array, size);
     }
 }

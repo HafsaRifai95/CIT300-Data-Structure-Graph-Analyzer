@@ -1,9 +1,14 @@
-
 import java.util.Scanner;
 
 public class main {
 
     public static void main(String[] args) {
+
+        System.out.println("========================================");
+        System.out.println(" DATA STRUCTURE PERFORMANCE ANALYZER");
+        System.out.println("========================================");
+        System.out.println("Project started successfully!");
+
         Scanner scanner = new Scanner(System.in);
         LinkedList list = new LinkedList();
         int choice;

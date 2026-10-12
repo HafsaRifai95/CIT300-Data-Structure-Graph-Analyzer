@@ -238,7 +238,7 @@ The project responsibilities were divided among the group members based on the s
 | Member 1 | Nuha Najeem | 23DA2-1073 | Array and Searching Implementation | Implemented array operations and searching algorithms, including linear search and binary search. |
 | Member 2 | Mirza Mazahir | 23DA2-0792 | Stack and Queue Implementation | Implemented stack and queue operations, demonstrating the LIFO and FIFO principles. |
 | Member 3 | Ilma Aun Moulana | 23DA2-0584 | Linked List Implementation | Implemented linked list operations, including insertion, deletion, searching, and displaying elements. |
-| Member 4 | Hafsa Rifai | Enter student ID | Graph Implementation and Traversal | Implemented graph operations, vertex and edge management, BFS and DFS traversal, and contributed to the main menu and integration of the graph component. |
+| Member 4 | Hafsa Rifai | 23DA2-0952 | Graph Implementation and Traversal | Implemented graph operations, vertex and edge management, BFS and DFS traversal, and contributed to the main menu and integration of the graph component. |
 | Member 5 | All members took part | All members took part | Performance Comparison, Main Menu, Integration and Testing | Contributed to performance comparison, main menu development, integration, and testing of the application. |
 
 ### Collaborative Contributions

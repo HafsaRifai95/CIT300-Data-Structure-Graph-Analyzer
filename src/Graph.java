@@ -103,7 +103,8 @@ public class Graph {
             return result;
         }
 
-        Queue<String> queue = new LinkedList<>();
+        // Use Java's built-in Queue and LinkedList to avoid class conflicts.
+        java.util.Queue<String> queue = new java.util.LinkedList<>();
         Set<String> visited = new LinkedHashSet<>();
 
         String start = startVertex.trim();

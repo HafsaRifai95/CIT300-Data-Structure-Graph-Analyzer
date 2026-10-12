@@ -1,146 +1,82 @@
-# Data Structure & Graph Performance Analyzer
+# Data Structure and Graph Performance Analyzer
 
 ## 1. Project Overview
 
-The **Data Structure & Graph Performance Analyzer** is a Java-based console application developed for the CIT300 Data Structures and Algorithms course.
+The **Data Structure and Graph Performance Analyzer** is a Java-based console application developed for the CIT300 Data Structures and Algorithms module. The project demonstrates the implementation and operation of fundamental data structures, searching algorithms, and graph traversal techniques.
 
-The project demonstrates the implementation and practical use of fundamental data structures, searching algorithms, graph operations, traversal algorithms, and performance analysis.
-
-The application integrates multiple components into a single menu-driven system, allowing users to perform operations and observe their results through a console interface.
+Users can interact with the application through a menu-driven interface to perform operations, test different algorithms, and compare their performance.
 
 ## 2. Project Objectives
 
-The main objectives of this project are to:
-
-- Implement and demonstrate fundamental data structures.
-- Perform insertion, deletion, searching, and display operations.
-- Implement linear and binary searching algorithms.
-- Demonstrate stack and queue operations.
-- Implement linked list operations.
-- Represent graphs and perform graph operations.
-- Demonstrate Breadth-First Search (BFS) and Depth-First Search (DFS).
-- Compare algorithm performance and computational complexity.
-- Apply input validation and error handling.
-- Demonstrate object-oriented programming principles.
-- Collaborate using GitHub for source-code management and integration.
+- Implement fundamental data structures using Java.
+- Demonstrate searching algorithms and graph traversal techniques.
+- Understand the time complexity of different operations and algorithms.
+- Compare the performance of selected algorithms.
+- Develop a menu-driven console application using object-oriented programming principles.
+- Collaborate as a team using Git and GitHub.
 
 ## 3. Technologies Used
 
 - **Programming Language:** Java
-- **Application Type:** Console-Based Application
-- **Development Environments:** Visual Studio Code (VS Code) and Eclipse IDE
+- **Development Environment:** Visual Studio Code / Eclipse
 - **Java Development Kit:** JDK
-- **Version Control:** Git and GitHub
+- **Version Control:** Git
+- **Code Hosting and Collaboration:** GitHub
 
-## 4. System Features
-
-The application provides a main menu containing the following options:
-
-1. Array Operations
-2. Stack Operations
-3. Queue Operations
-4. Linked List Operations
-5. Searching Operations
-6. Graph Operations
-7. Performance Comparison
-8. Display All Results
-9. Exit
+## 4. Main Features
 
 ### 4.1 Array Operations
-
-The array component demonstrates operations on array data, including insertion, deletion, searching, and displaying elements.
+- Insert elements.
+- Delete elements.
+- Search for elements.
+- Display array elements.
 
 ### 4.2 Stack Operations
-
-The stack component demonstrates the **Last-In, First-Out (LIFO)** principle, in which the last element added is the first element removed.
-
-The supported operations include:
-
-- Push
-- Pop
-- Peek
-- Display
-
-The application handles attempts to remove elements from an empty stack.
+- Push elements onto the stack.
+- Pop elements from the stack.
+- Peek at the top element.
+- Display stack elements.
 
 ### 4.3 Queue Operations
-
-The queue component demonstrates the **First-In, First-Out (FIFO)** principle, in which the first element added is the first element removed.
-
-The supported operations include:
-
-- Enqueue
-- Dequeue
-- Peek / Front
-- Display
-
-The application handles attempts to remove elements from an empty queue.
+- Enqueue elements.
+- Dequeue elements.
+- View the front element.
+- Display queue elements.
 
 ### 4.4 Linked List Operations
+- Insert elements.
+- Delete elements.
+- Search for elements.
+- Display linked list elements.
 
-The linked list component demonstrates dynamic data management through linked nodes.
-
-The supported operations include:
-
-- Insert
-- Delete
-- Search
-- Display
-
-The application also provides information about the linked list, including its size.
-
-### 4.5 Searching Operations
-
-The searching component demonstrates algorithms used to locate elements in a collection.
-
-The searching algorithms include:
-
-- Linear Search
-- Binary Search
-
-These algorithms can be compared to understand the differences in their approaches and computational complexities.
-
-**Note:** Binary Search requires appropriately sorted data to work correctly.
+### 4.5 Searching Algorithms
+- Linear Search.
+- Binary Search.
+- Demonstration of searching operations.
 
 ### 4.6 Graph Operations
-
-The graph component represents connections between vertices and demonstrates graph traversal algorithms.
-
-The available operations include:
-
-- Add Vertex
-- Add Edge
-- Display Graph
-- Search Vertex
-- Breadth-First Search (BFS)
-- Depth-First Search (DFS)
-- Graph Statistics
-- Compare BFS and DFS Performance
-
-The graph component also handles situations such as attempting to add an edge when the required vertices do not exist.
+- Add vertices.
+- Add edges between vertices.
+- Display the graph.
+- Search for a vertex.
+- Perform Breadth-First Search (BFS).
+- Perform Depth-First Search (DFS).
+- Display graph statistics.
+- Compare BFS and DFS performance.
 
 ### 4.7 Performance Comparison
+- Compare selected searching and graph traversal algorithms.
+- Display performance results to help understand algorithm efficiency.
 
-The performance comparison component allows users to examine and compare the behaviour of selected algorithms and data structures.
+### 4.8 Main Menu and Integration
+- Access the different data structure and algorithm modules through a menu-driven interface.
+- Navigate between operations.
+- Display available results.
+- Exit the application.
 
-Depending on the implemented functionality, the comparison may consider:
+## 5. Algorithm Complexity
 
-- Execution time
-- Operation counts
-- Search results
-- Traversal results
-
-These results help demonstrate algorithmic efficiency and provide a practical basis for discussing computational complexity.
-
-### 4.8 Display All Results
-
-This option displays the current states of the application's data structures, including arrays, stacks, queues, linked lists, and graphs.
-
-It also provides information about empty data structures where applicable.
-
-## 5. Algorithmic Complexity
-
-The following table summarises the typical time complexities of the searching and graph traversal algorithms used in this project.
+The following table shows the general time complexity of the main algorithms included in the project.
 
 | Algorithm | Best Case | Average Case | Worst Case |
 |---|---|---|---|
@@ -149,115 +85,91 @@ The following table summarises the typical time complexities of the searching an
 | Breadth-First Search (BFS) | O(V + E) | O(V + E) | O(V + E) |
 | Depth-First Search (DFS) | O(V + E) | O(V + E) | O(V + E) |
 
-Where:
-
-- **n** represents the number of elements.
-- **V** represents the number of vertices in a graph.
-- **E** represents the number of edges in a graph.
-
-These are standard theoretical time complexities under the usual assumptions for the corresponding algorithms. Actual execution times may vary depending on the input data, graph representation, hardware, and implementation.
+**Note:** Binary Search requires sorted data. For graph traversal, `V` represents the number of vertices and `E` represents the number of edges.
 
 ## 6. Project Structure
 
-The Java source files are organised inside the `src` directory.
+The project contains the following main source files:
 
 ```text
 CIT300-Data-Structure-Graph-Analyzer/
 │
 ├── src/
 │   ├── ArrayOperations.java
+│   ├── Stack.java
+│   ├── Queue.java
+│   ├── LinkedList.java
+│   ├── SearchingOperations.java
 │   ├── Graph.java
 │   ├── GraphTest.java
-│   ├── LinkedList.java
-│   ├── main.java
 │   ├── Member2App.java
-│   ├── Queue.java
-│   ├── SearchingOperations.java
-│   └── Stack.java
+│   └── main.java
 │
 ├── README.md
 └── .gitignore
 ```
 
-The main application entry point is `main.java`. It provides the integrated menu through which users access the different components.
+Each Java file contains the implementation or supporting code for the relevant data structure, algorithm, or application functionality.
 
-## 7. Installation and Execution
+## 7. How to Run the Project
 
 ### Prerequisites
 
-Before running the application, ensure that a Java Development Kit (JDK) is installed and configured on your computer.
+- Install the Java Development Kit (JDK).
+- Install Visual Studio Code, Eclipse, or another Java-compatible development environment.
+- Clone or download this repository.
 
-### Step 1: Clone the Repository
+### Steps to Run
 
-Open a terminal and run:
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/HafsaRifai95/CIT300-Data-Structure-Graph-Analyzer.git
 ```
 
-### Step 2: Open the Project Directory
+**2. Open the project folder**
 
-```bash
-cd CIT300-Data-Structure-Graph-Analyzer
-```
+Open the downloaded project in Visual Studio Code, Eclipse, or a terminal.
 
-### Step 3: Compile the Java Files
+**3. Compile the Java source files**
 
-On Windows PowerShell, run:
+From the project root directory, run:
 
 ```powershell
 javac src\*.java
 ```
 
-### Step 4: Run the Application
+**4. Run the application**
 
 ```powershell
 java -cp src main
 ```
 
-The main menu will appear in the terminal. Enter the number corresponding to the operation you want to perform and follow the prompts.
+**5. Use the main menu**
 
-## 8. Input Validation and Error Handling
+Choose an option from the displayed menu and follow the instructions to perform the available operations.
 
-The application handles certain invalid operations, such as attempting to add an edge when the required graph vertices do not exist.
+## 8. Input Validation
 
-Empty data structures can also be displayed, with messages indicating that they contain no elements.
-
-Input validation and error handling help improve the reliability and usability of the application.
+The application includes input validation for supported operations to help handle invalid inputs and prevent unsupported operations. For example, graph operations validate vertex references when adding edges.
 
 ## 9. Team Members and Individual Contributions
 
-The project responsibilities were divided among the group members based on the suggested responsibilities provided in the assignment brief. Each member was responsible for a specific component, and the components were integrated into a single application.
+| Student ID | Name | Assigned Responsibility | Individual Contribution |
+|---|---|---|---|
+| 23DA2-1073 | Nuha Najeem | Array and Searching Implementation | Implemented array operations, including insertion, deletion, searching, and displaying elements. Implemented Linear Search and Binary Search and contributed to testing these functionalities. |
+| 23DA2-0792 | Mirza Mazahir | Stack and Queue Implementation | Implemented stack operations, including push, pop, peek, and display. Implemented queue operations, including enqueue, dequeue, viewing the front element, and display. |
+| 23DA2-0584 | Ilma Aun Moulana | Linked List Implementation | Implemented linked list operations, including insertion, deletion, searching, and displaying elements. |
+| 23DA2-0952 | Hafsa Rifai | Graph Implementation and Traversal | Implemented graph operations, including vertex and edge management, graph display, vertex searching, Breadth-First Search (BFS), and Depth-First Search (DFS). Contributed to graph statistics, BFS and DFS performance comparison, integration, and graph testing. |
 
-## 9. Team Members and Individual Contributions
+**Collaborative Contributions:** All team members contributed to developing the project according to their assigned responsibilities. Git and GitHub were used to manage source code, track changes, and integrate individual contributions into the project.
 
-The project responsibilities were divided among the group members based on the suggested responsibilities provided in the assignment brief. Each member was responsible for a specific component, and the components were integrated into a single application.
-
-| Member | Full Name | Student ID | Assigned Responsibility | Individual Contribution |
-|---|---|---|---|---|
-| Member 1 | Nuha Najeem | 23DA2-1073 | Array and Searching Implementation | Implemented array operations and searching algorithms, including linear search and binary search. |
-| Member 2 | Mirza Mazahir | 23DA2-0792 | Stack and Queue Implementation | Implemented stack and queue operations, demonstrating the LIFO and FIFO principles. |
-| Member 3 | Ilma Aun Moulana | 23DA2-0584 | Linked List Implementation | Implemented linked list operations, including insertion, deletion, searching, and displaying elements. |
-| Member 4 | Hafsa Rifai | 23DA2-0952 | Graph Implementation and Traversal | Implemented graph operations, vertex and edge management, BFS and DFS traversal, and contributed to the main menu and integration of the graph component. |
-| Member 5 | All members took part | All members took part | Performance Comparison, Main Menu, Integration and Testing | Contributed to performance comparison, main menu development, integration, and testing of the application. |
-
-### Collaborative Contributions
-
-All group members contributed to the overall project through their assigned responsibilities. Performance comparison, integration, and testing were collaborative activities where applicable.
-
-GitHub was used to manage source code, track changes, and integrate individual components into the overall application.
 ## 10. GitHub Collaboration
 
-GitHub was used for source-code management and collaboration throughout the development process.
+GitHub was used as the central repository for the project. Team members contributed their code, managed changes, and collaborated to integrate the different data structure and algorithm implementations into a single application.
 
-The repository contains the Java source files and the integrated console application. Commits and pull requests provide a record of development and code integration.
-
-**GitHub Repository:** [CIT300 Data Structure & Graph Performance Analyzer](https://github.com/HafsaRifai95/CIT300-Data-Structure-Graph-Analyzer)
+**Repository:** https://github.com/HafsaRifai95/CIT300-Data-Structure-Graph-Analyzer
 
 ## 11. Conclusion
 
-The Data Structure & Graph Performance Analyzer brings together fundamental data structures, searching algorithms, graph representation, and traversal techniques in a single Java console application.
-
-The project provides a practical environment for exploring data structure operations, understanding algorithmic complexity, and observing how different algorithms behave.
-
-It also demonstrates collaborative software development through GitHub-based source-code management and integration.
+The Data Structure and Graph Performance Analyzer demonstrates the practical implementation of fundamental data structures, searching algorithms, and graph traversal techniques using Java. Through this project, the team gained practical experience in algorithm implementation, complexity analysis, testing, integration, and collaborative software development.
